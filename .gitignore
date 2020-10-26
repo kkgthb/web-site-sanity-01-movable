@@ -1,0 +1,13 @@
+# Don't try to do inline comments.  Things break.
+
+# Ignore secrets
+/.env
+/*.env
+/*.env-*
+
+# Ignore "node_modules" and "dist" in studio
+/node_modules/
+/node_modules/**
+/dist/
+/dist/**
+yarn.lock
