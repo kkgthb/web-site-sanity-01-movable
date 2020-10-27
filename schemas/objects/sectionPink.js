@@ -1,11 +1,15 @@
+import icon from '../../static/icons/cake'
+
 export default {
   name: 'sectionPink',
-  title: 'Pink Section',
+  title: 'Section - Pink',
   type: 'object',
+  icon,
   fields: [
     {
       name: 'say',
-      title: 'What would you like to say?',
+      title: 'Say',
+      description: 'What text would you like in this "pink" section?',
       type: 'string'
     },
   ],
