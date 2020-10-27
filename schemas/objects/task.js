@@ -1,33 +1,28 @@
+import icon from '../../static/icons/check-box-outline-blank'
+
 export default {
   name: 'task',
-  title: 'Individual Task',
+  title: 'Task For Me',
   type: 'object',
+  icon,
   fields: [
     {
       name: 'task',
-      title: 'What is the task?',
-      type: 'string'
+      title: 'Task',
+      type: 'string',
+      required: true,
     },
     {
       name: 'done',
-      title: 'Did you do it?',
-      type: 'boolean'
+      title: 'Done?',
+      type: 'boolean',
+      required: true,
     },
     {
       name: 'how',
-      title: 'How should/did you do it?',
-      type: 'string'
+      title: 'How?',
+      type: 'string',
+      required: false,
     },
   ],
-  preview: {
-    select: {
-      task: 'task'
-    },
-    prepare(selection) {
-      const {task} = selection
-      return {
-        title: task,
-      }
-    }
-  }
 }
