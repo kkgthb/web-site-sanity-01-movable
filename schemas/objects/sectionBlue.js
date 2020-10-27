@@ -1,11 +1,15 @@
+import icon from '../../static/icons/bluetooth'
+
 export default {
   name: 'sectionBlue',
-  title: 'Blue Section',
+  title: 'Section - Blue',
   type: 'object',
+  icon,
   fields: [
     {
       name: 'mention',
-      title: 'What would you like to mention?',
+      title: 'Mention',
+      description: 'What text would you like in this "blue" section?',
       type: 'string'
     },
   ],
