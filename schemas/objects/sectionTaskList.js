@@ -1,7 +1,10 @@
+import icon from '../../static/icons/tasks'
+
 export default {
   name: 'sectionTaskList',
-  title: 'Tasks Section',
+  title: 'Section - Task List',
   type: 'object',
+  icon,
   fields: [
     {
       name: 'accomplishments',
@@ -10,15 +13,4 @@ export default {
       of:[{type:'task'}],
     },
   ],
-  preview: {
-    select: {
-      accomplishments: 'accomplishments'
-    },
-    prepare(selection) {
-      const {accomplishments} = selection
-      return {
-        title: `${JSON.stringify(accomplishments.map(accomplishment => accomplishment['task']))}`,
-      }
-    }
-  }
 }
